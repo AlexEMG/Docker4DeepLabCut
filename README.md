@@ -27,6 +27,7 @@ Add your user to the docker group.
 
     $ sudo usermod -aG docker $USER
 
+(perhaps open a new terminal to make sure that you are added from now on)
 Lastly, install the Docker and DeepLabCut: 
 ```
 git clone https://github.com/AlexEMG/Docker4DeepLabCut
@@ -54,7 +55,7 @@ Options:
 ```
 GPU=1 bash ./dlc-docker run -d -p 2351:8888 -e USER_HOME=$HOME/DeepLabCut --name alex_GPU1 dlc_user/dlc_tf1.2
 ```
-Now you can enter your container in the terminal, or via a browser interface: 
+Do not run this with sudo. Now you can enter your container in the terminal, or via a browser interface: 
 
  - Enter the container via the terminal (to get terminal access in container):
 ```
