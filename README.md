@@ -62,7 +62,7 @@ Do not run this with sudo. Now you can enter your container in the terminal, or 
 
  - Enter the container via the terminal (to get terminal access in container):
 ```
-docker exec -it alex_GPU1 /bin/bash
+docker exec --user $USER -it alex_GPU1 /bin/bash
 ```
 Access your linked (internal home) directory:
 ```
