@@ -1,9 +1,12 @@
+
 FROM python:3
 RUN pip install imageio
 # install ffmpeg from imageio.
 RUN python -c "import imageio; imageio.plugins.ffmpeg.download()"
 
 FROM bethgelab/deeplearning:cuda8.0-cudnn5
+RUN apt-get update
+RUN apt-get -y install ffmpeg
 
 RUN pip3 install easydict
 RUN pip install tables #for h5 support
