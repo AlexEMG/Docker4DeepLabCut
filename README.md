@@ -1,4 +1,5 @@
-# Docker Environment for DeepLabCut
+# Docker Environment for DeepLabCut 
+## VERSION 1 only --> see here for Docker-DeepLabCut2.0: https://github.com/MMathisLab/Docker4DeepLabCut2.0
 
 This package will allow you to run [DeepLabCut](https://github.com/AlexEMG/DeepLabCut) with everything pre-installed inside a Docker container.
 
