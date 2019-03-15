@@ -2,7 +2,6 @@
 FROM python:3
 RUN pip install imageio
 # install ffmpeg from imageio.
-RUN python -c "import imageio"
 RUN pip install imageio-ffmpeg #imageio.ffmpeg.download() is deprecated
 
 FROM bethgelab/deeplearning:cuda8.0-cudnn5
